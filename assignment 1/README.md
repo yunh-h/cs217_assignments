@@ -4,7 +4,7 @@ This project is a note-taking application that includes three different interfac
 ## Dependencies
 To run this project, you need to have the following dependencies installed:
 
-- Python 3.7+
+- Python 3.10+
 - FastAPI
 - Flask
 - Streamlit
