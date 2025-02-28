@@ -32,7 +32,7 @@ uvicorn api:app --reload
 - `GET /`: Welcome message and list of endpoints.
 - `GET /list`: List all note names.
 - `GET /find?term=<term>`: Find notes that match the search term.
-- `GET /note/{name}`: Get the content of a specific note.
+- `GET /note/<name>`: Get the content of a specific note.
 - `POST /add`: Add a new note.
 
 ## Flask
