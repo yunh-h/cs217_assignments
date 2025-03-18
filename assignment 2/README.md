@@ -1,17 +1,17 @@
 # Assignment 2
-This project is a note-taking application that includes three different interfaces: FastAPI, Flask, and Streamlit. Each interface allows you to add note, list all notes, search term, and view notes. Below are the instructions on how to set up and run each interface.
+This project is a note-taking application that allows users to create, view, search, and manage notes. The application is built using Flask and SQLAlchemy, providing a web interface to interact with the notes. Users can add comments to notes, search for notes and comments, and delete notes along with their associated comments.
 
 ## Dependencies
 To run this project, you need to have the following dependencies installed:
 
 - Python 3.10+
 - Flask
-- Uvicorn
-- Pydantic
+- Flask-SQLAlchemy
+- SQLAlchemy
 
 You can install the required dependencies using pip:
 ```sh
-pip install flask
+pip install Flask Flask-SQLAlchemy SQLAlchemy
 ```
 
 ## Running Flask Server
