@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>All Notes</h2>
+<ul>
+    {% for note in all_notes %}
+    <li><a href="{{ url_for('routes.note_detail', name=note.name) }}">{{ note.name }}</a></li>
+    {% endfor %}
+</ul>
+
+<h2>Add Note</h2>
+<form action="{{ url_for('routes.index') }}" method="post">
+    <input type="text" name="name" placeholder="Note name" required>
+    <textarea name="content" placeholder="Note content" required></textarea>
+    <button type="submit">Add Note</button>
+</form>
+
+<h2>Search Term</h2>
+<form action="{{ url_for('routes.index') }}" method="get">
+    <input type="text" name="term" placeholder="Search term" value="{{ term }}">
+    <button type="submit">Search</button>
+</form>
+
+{% if term %}
+<h2>Search Results for "{{ term }}"</h2>
+{% if message %}
+<p>{{ message }}</p>
+{% else %}
+<ul>
+    {% for note in results %}
+    <li><a href="{{ url_for('routes.note_detail', name=note) }}">{{ note }}</a></li>
+    {% endfor %}
+</ul>
+{% endif %}
+{% endif %}
+{% endblock %}

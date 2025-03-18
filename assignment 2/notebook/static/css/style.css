@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+main {
+    padding: 3rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 0.5rem 0;
+}
+
+form {
+    margin: 1rem 0;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button.delete-button {
+    background-color: #be221c; 
+}
+
+button.delete-button:hover {
+    background-color: #d9534f; 
+}
+
+.comments ul {
+    padding-left: 10px;
+}
+
+.comments li {
+    margin-left: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.note-content {
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 1rem;
+}
+
+.note-title {
+    font-size: 1.5em;
+}
