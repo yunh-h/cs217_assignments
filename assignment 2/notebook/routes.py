@@ -1,6 +1,5 @@
 from flask import Blueprint, request, render_template, redirect, url_for
 from .models import db, Note, Comment
-# from notebook import create_app
 
 routes = Blueprint('routes', __name__)
 
