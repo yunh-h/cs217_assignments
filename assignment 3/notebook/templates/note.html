@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="note-title">
+    <h2>{{ name }}</h2>
+</div>
+<div class="note-content">
+    <p>{{ content }}</p>
+</div>
+<p>{{ date }}</p>
+
+<hr>
+
+<h3>Comments</h3>
+<div class="comments">
+    <ul>
+        {% for comment in comments %}
+        <li>{{ comment.content }} ({{ comment.date }})</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<hr>
+
+<h3>Add Comment</h3>
+<button id="add-comment-button">Add Comment</button>
+<form id="comment-form" action="{{ url_for('routes.add_comment', name=name) }}" method="post" style="display: none;">
+    <textarea name="content" placeholder="Enter your comment here" required></textarea>
+    <button type="submit">Submit</button>
+</form>
+
+<form action="{{ url_for('routes.delete_note_and_comments', name=name) }}" method="post">
+    <button type="submit" class="delete-button">Delete Note</button>
+</form>
+{% endblock %}
