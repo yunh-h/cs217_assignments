@@ -25,7 +25,7 @@ docker build -t notebook .
 
 2. **Run the Docker Container:**
 ```sh
-docker run -d -p 8080:8080 -v "$(pwd)/instance:/app/instance" notebook
+docker run --rm -it -p 8080:8080 -v "$(pwd)/instance:/app/instance" notebook
 ```
 
 3. **Access the Application:** Open your web browser and go to http://127.0.0.1:8080.
