@@ -10,9 +10,10 @@ To run this project, you need to have the following dependencies installed:
 - SQLAlchemy
 - Docker (for containerization)
 
-You can install the required Python dependencies using pip:
+You can install the required Python dependencies using the `requirements.txt` file:
+
 ```sh
-pip install Flask Flask-SQLAlchemy SQLAlchemy
+pip install -r requirements.txt
 ```
 
 ## Running the Application with Docker
