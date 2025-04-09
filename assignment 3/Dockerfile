@@ -4,6 +4,9 @@ WORKDIR /app
 COPY . /app
 
 RUN pip install -r requirements.txt
+
+VOLUME /app/instance
+
 EXPOSE 8080
 ENV FLASK_APP=run.py
 
